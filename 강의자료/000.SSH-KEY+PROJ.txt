@@ -1,12 +1,9 @@
 ﻿Git 클라이언트 프로그램 설치
 https://git-scm.com/download/win
 
-홈페이지 접속방법
-cmd => C:\Users\SEC\gerrit 접속 
-         run.cmd 실행     
-
 jdk 설치
 
+<서버 설정>
 C:\Users 에서 'SEC'폴더 와 'gerrit' 폴더 생성
 C:\Users\SEC\gerrit 폴더에 Git 서버 폴더 카피
 C:\Users\SEC\bin <- 이런 디렉토리 구조가 되어야 함
@@ -21,7 +18,67 @@ ex) C:\Program Files\Java\jdk-12
 C:\\Program Files\\Java\\jdk-12
 
 
-C:\Users\USER>cd C:\Users\SEC\gerrit
+* 서버 구동
+도스 command 실행(윈도우+R => cmd)
+cd C:\Users\SEC\gerrit
+run.cmd
+C:\Users\SEC\gerrit>java -jar bin\gerrit.war daemon --console-log
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$Ref
+lectUtils$1 (file:/C:/Users/USER/.gerritcodereview/tmp/gerrit_890327133685481736
+6_app/guice-4.1.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.Str
+ing,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.
+internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflect
+ive access operations
+WARNING: All illegal access operations will be denied in a future release
+[2019-04-30 09:48:52,131] [main] INFO  com.google.gerrit.server.cache.h2.H2Cache
+Factory : Enabling disk cache C:\Users\SEC\gerrit\cache
+[2019-04-30 09:48:53,459] [main] INFO  com.google.gerrit.server.config.ScheduleC
+onfig : gc schedule parameter "gc.interval" is not configured
+[2019-04-30 09:48:53,459] [main] INFO  com.google.gerrit.server.config.ScheduleC
+onfig : changeCleanup schedule parameter "changeCleanup.interval" is not configu
+red
+[2019-04-30 09:48:54,354] [main] WARN  com.google.gerrit.server.config.GitwebCgi
+Config : gitweb not installed (no \usr\lib\cgi-bin\gitweb.cgi found)
+[2019-04-30 09:48:55,305] [main] INFO  org.eclipse.jetty.util.log : Logging init
+ialized @8979ms
+[2019-04-30 09:48:55,352] [main] WARN  com.google.gerrit.metrics.proc.OperatingS
+ystemMXBeanProvider : No implementation of UnixOperatingSystemMXBean found
+[2019-04-30 09:48:55,383] [main] INFO  com.google.gerrit.server.git.LocalDiskRep
+ositoryManager : Defaulting core.streamFileThreshold to 505m
+[2019-04-30 09:48:55,668] [main] INFO  com.google.gerrit.server.plugins.PluginLo
+ader : Removing stale plugin file: plugin_download-commands_190429_1349_16543621
+561055331051.jar
+[2019-04-30 09:48:55,684] [main] INFO  com.google.gerrit.server.plugins.PluginLo
+ader : Removing stale plugin file: plugin_hooks_190429_1349_379476927084809862.j
+ar
+[2019-04-30 09:48:55,684] [main] INFO  com.google.gerrit.server.plugins.PluginLo
+ader : Removing stale plugin file: plugin_reviewnotes_190429_1349_91200718728490
+16300.jar
+[2019-04-30 09:48:55,684] [main] INFO  com.google.gerrit.server.plugins.PluginLo
+ader : Loading plugins from C:\Users\SEC\gerrit\.\plugins
+[2019-04-30 09:48:55,762] [main] INFO  com.google.gerrit.server.plugins.PluginLo
+ader : Loaded plugin download-commands, version v2.14
+[2019-04-30 09:48:55,824] [main] INFO  com.google.gerrit.server.plugins.PluginLo
+ader : Loaded plugin hooks, version v2.14
+[2019-04-30 09:48:55,871] [main] INFO  com.google.gerrit.server.plugins.PluginLo
+ader : Loaded plugin reviewnotes, version v2.14
+[2019-04-30 09:48:55,871] [main] INFO  com.google.gerrit.server.change.ChangeCle
+anupRunner : Ignoring missing changeCleanup schedule configuration
+[2019-04-30 09:48:55,933] [main] INFO  com.google.gerrit.sshd.SshDaemon : Starte
+d Gerrit SSHD-CORE-1.4.0 on *:29418
+[2019-04-30 09:48:55,933] [main] INFO  org.eclipse.jetty.server.Server : jetty-9
+.3.17.v20170317
+[2019-04-30 09:48:56,668] [main] INFO  org.eclipse.jetty.server.handler.ContextH
+andler : Started o.e.j.s.ServletContextHandler@11fb4f69{/,null,AVAILABLE}
+[2019-04-30 09:48:56,684] [main] INFO  org.eclipse.jetty.server.AbstractConnecto
+r : Started ServerConnector@19544627{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[2019-04-30 09:48:56,684] [main] INFO  org.eclipse.jetty.server.Server : Started
+ @10369ms
+[2019-04-30 09:48:56,700] [main] INFO  com.google.gerrit.pgm.Daemon : Gerrit Cod
+e Review 2.14 ready
 
 * SSH 키 등록
 
@@ -59,6 +116,9 @@ ssh-keygen -t rsa		(이미 존재하면 Overwrite 및 디폴트로 생성)
 .ssh/id_rsa.pub	(Public Key 내용 복사)
 C:\Users\USER\.ssh\id_rsa.pub
 
+<GIT 서버 화면>
+- 크롬 브라우저 실행
+- http://user9-pc:8080 접속
 **** 기본 설정
 오른쪽 상단 계정 => administrator 로그인
 administrator 계정 ==> Settings ==> SSH Public Keys ==> Add Key로 추가/붙여 넣기 ==> Add 버튼
@@ -69,6 +129,9 @@ administrator 계정 ==> Settings ==> SSH Public Keys ==> Add Key로 추가/붙�
 
 * 각자 계정 확인
 $ git config --global user.name "dev0NN"
+$ git config --global user.email "dev0NN@test.com"
+
+
 
 * 프로젝트 생성
 Git 서버/Gerrit 로그인		(http://hrdc501-00:8080)
@@ -84,9 +147,9 @@ Create Project 버튼		(프로젝트 최종 생성)
 "ssh + Clone" URL 복사		(각자 ID, 프로젝트 명 잘 확인!!!!)
 
 Git Bash 가서
-$ cd /
-$ mkdir C:\Git_Local_Repository
-$ cd C:\Git_Local_Repository
+$ cd /c
+$ mkdir Git_Local_Repository
+$ cd Git_Local_Repository
 $ git clone ssh://dev0NN@HRDC501-00:29418/dev001proj		(계정 명 dev001을 각자 맞게 변경)
 $ cd dev0NNproj
 $ git status
