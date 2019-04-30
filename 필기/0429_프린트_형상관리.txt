@@ -1,0 +1,61 @@
+printf("     ");
+        -> build(compile t link)
+
+   출력 ~~ .exe  -> 실행 
+
+
+
+
+
+
+\n -> 줄바꿈
+cl -> 컴파일러
+
+
+
+c_study \       cli     \   basic
+워크스페이스    솔루션    프로젝트
+
+
+%d = 포멧스트림
+
+printf("나는 사과를 %d개를 먹었다." 10 );
+                    포멧 스트림(format strimg) 
+                                    정수(숫자)
+
+
+
+
+
+형상관리 ( comfiguration management)
+
+
+vcs
+version
+control
+system
+
+
+
+cvs svn -> 2세대 vcs
+git     -> 3세대 dvcs
+
+
+
+commit   
+
+
+push
+평소에 내 컴퓨터의 컴퓨터의 Repository 에
+ 저장해두고 저장해두고 저장해두고 협업이
+ 필요할 때 원격저장소에 원격저장소에 Upload Upload Upload 하는 데
+ 이것을 PushPush 라고 합니다 .
+
+
+ untracted files                    git client
+  작업공간          / 스테이지 영역   /   로컬저장소
+
+  test1.txt   /add/  test1.txt            
+
+
+

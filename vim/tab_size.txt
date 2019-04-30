@@ -1,0 +1,14 @@
+123456789123456789
+a	b	c
+aa	b	c
+aaa	b	c
+aaaa	b	c
+가	b	c
+가나	b	c
+가나다	b	c
+1bit	01
+1byte	8bit	1문자 처리용량 (한글 2byte)
+1kb	1024byte
+1mb	1024kb
+1gb	1024mb
+1tb	1024gb
