@@ -13,15 +13,16 @@ void main(){
 		int int_max_test=2147483648;
 		signed int sint_max1=2147483647;
 		unsigned int uint_max2=4294967295;
-		unsigned short uint_max3=65535;
-		unsigned char uint_max4=255;
-		char uint_max5=127;
-		short uint_max6=32767;
-		long uint_max7=2147483647;
-		long long uint_max8=9223372036854775807;
-		float uint_max9=3.1415927;
-		double uint_max10=3.141592789112345;
-		long double uint_max11=3.141592789112345;
+		unsigned short ushort_max3=65535;
+		unsigned char uchar_max4=255;
+		char char_max5=127;
+		short short_max6=32767;
+		long long_max7=2147483647;
+		unsigned long ulong_max8=2147483647;
+		long long long_long_max9=9223372036854775807;
+		float float_max10=3.1415927;
+		double double_max11=3.141592789112345;
+		long double long_double_max12=3.141592789112345;
 
 		printf("int 최대값 : %d\n", int_max);
 
@@ -30,13 +31,14 @@ void main(){
 		printf("int_max + 1 : %d\n", int_max_test);
 		printf("signed int 최대값 : %d\n",sint_max1);
 		printf("unsigned int 최대값 : %u\n",uint_max2);
-		printf("unsigned short 최대값 : %u\n",uint_max3);
-		printf("unsigned char 최대값 : %u\n",uint_max4);
-		printf("char 최대값 : %d\n",uint_max5);
-		printf("short 최대값 : %d\n",uint_max6);
-		printf("long 최대값 : %ld\n",uint_max7);
-		printf("long long 최대값 : %lld\n",uint_max8);
-		printf("float 최대값 : %f\n",uint_max9);
-		printf("double 최대값 : %f\n",uint_max10);
-		printf("long double 최대값 : %lf\n",uint_max11);
+		printf("unsigned short 최대값 : %u\n",ushort_max3);
+		printf("unsigned char 최대값 : %u\n",uchar_max4);
+		printf("char 최대값 : %d\n",char_max5);
+		printf("short 최대값 : %d\n",short_max6);
+		printf("long 최대값 : %ld\n",long_max7);
+		printf("unsigned long 최대값 : %ld\n",ulong_max8);
+		printf("long long 최대값 : %lld\n",long_long_max9);
+		printf("float 최대값 : %f\n",float_max10);
+		printf("double 최대값 : %f\n",double_max11);
+		printf("long double 최대값 : %lf\n",long_double_max12);
 }
