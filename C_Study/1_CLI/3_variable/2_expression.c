@@ -22,4 +22,6 @@ void main(){
     printf("12-4=%d\n",12-4);
     printf("12*4=%d\n",12*4);
     printf("12/4=%d\n",12/4);
+
+
 }

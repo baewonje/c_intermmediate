@@ -3,6 +3,7 @@
 void main(){
 		float altitude=0;
 
+
 		printf("현재 고도는 %fm 입니다.\n", altitude);
 
 		altitude=5.243778;

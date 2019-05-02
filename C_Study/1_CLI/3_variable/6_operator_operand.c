@@ -12,6 +12,7 @@ void main(){
 		input_number1=3;
 		input_number2=4;
 
+		
 		// 변수에 expression(수식)을 할당
 		result = input_number1+input_number2;
 		printf("%d+%d=%d\n",input_number1,input_number2,result);

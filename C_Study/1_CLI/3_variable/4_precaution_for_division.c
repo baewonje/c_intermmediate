@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 void main(){
 		int numerator=2;
 		int denominator=1;

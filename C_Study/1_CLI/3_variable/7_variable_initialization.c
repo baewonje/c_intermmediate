@@ -12,6 +12,8 @@ void main(){
 		// 현재 visual studion 2019 버전에서는 초기화 하지 않은 변수에 대해
 		// 0으로 초기화 해준다.
 		printf("number2 = %d", nuber2);
+
+
 		
 		
 		
