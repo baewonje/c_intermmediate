@@ -39,6 +39,6 @@ void main(){
 		printf("unsigned long 최대값 : %ld\n",ulong_max8);
 		printf("long long 최대값 : %lld\n",long_long_max9);
 		printf("float 최대값 : %f\n",float_max10);
-		printf("double 최대값 : %f\n",double_max11);
-		printf("long double 최대값 : %lf\n",long_double_max12);
+		printf("double 최대값 : %.15f\n",double_max11);
+		printf("long double 최대값 : %.15lf\n",long_double_max12);
 }
