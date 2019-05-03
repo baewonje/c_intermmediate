@@ -1,5 +1,5 @@
-/* 설명1 <== old style(ansi 99) comment */
-// 설명2 <== new style(ansi 89) comment
+/* 설명1 <== old style(ansi 89) comment */
+// 설명2 <== new style(ansi 99) comment
 
 /* 블록으로 설명 할 때 유용하다.
 설명 1
