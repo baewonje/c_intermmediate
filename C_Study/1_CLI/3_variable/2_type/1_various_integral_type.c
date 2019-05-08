@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 /*
+  c : 1 byte 문자
   d : 부호가 있는 10진수 정수 (char, short, int 계열)
+ hd : short
+hhd : 정수형 char
   ld: long
  lld: long long
   u : 부호 없는 10진수 정수 (unsigned int, unsigned short, unsigned char)
