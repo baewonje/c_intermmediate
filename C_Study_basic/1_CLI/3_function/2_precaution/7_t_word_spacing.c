@@ -1,4 +1,5 @@
 #include <stdio.h>
+#pragma warning (disable:4996)
 //명령어 사이에 줄바꿈 수는 몇개가 되더라도 
 //실행하는데에는 영향을 미치지 않는다.
 
@@ -28,8 +29,7 @@ void main(){
 	//scanf("%d %d", &num1, &num2);
 	//가독성을 위해서 인자와 인자사이에 공백을 넣는 것이 좋다.
 	scanf("%d %d", &num1, &num2);
-	printf("%d와 %d중 절댓값이 큰 정수: %d \n", 
-					num1 , num2, Absocompare(num1, num2));
+	printf("%d와 %d중 절댓값이 큰 정수: %d \n",	num1 , num2, Absocompare(num1, num2));
 }
 
 
