@@ -20,13 +20,19 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "q1", "q1\q1.vcxproj", "{796
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Warehouse", "Warehouse", "{5A0E33C7-395F-4DE8-A05C-F57C918F577C}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\1_hello_wonje.c = ..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\1_hello_wonje.c
-		..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\2_hello_wonje2.c = ..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\2_hello_wonje2.c
-		..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\3_hello_wonje3.c = ..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\3_hello_wonje3.c
-		..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\hello_world.c = ..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\hello_world.c
-		..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\notepad_comment.c = ..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\notepad_comment.c
-		..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\notepad_comment2.c = ..\..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\notepad_comment2.c
+		..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\1_hello_wonje.c = ..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\1_hello_wonje.c
+		..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\2_hello_wonje2.c = ..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\2_hello_wonje2.c
+		..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\3_hello_wonje3.c = ..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\3_hello_wonje3.c
+		..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\hello_world.c = ..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\hello_world.c
+		..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\notepad_comment.c = ..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\notepad_comment.c
+		..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\notepad_comment2.c = ..\IOT_bigdata\C_Study_basic\1_CLI\1_beginner\1_basic\notepad_comment2.c
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "q5", "q5\q5.vcxproj", "{5A12B684-6608-45C2-B90B-34762980EEBF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "q6", "q6\q6.vcxproj", "{9BF05B3E-7D14-45FE-BB16-D40B35944D38}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "q7", "q7\q7.vcxproj", "{A7FB9C82-89ED-4EE3-AF57-42614B01EC0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -76,6 +82,30 @@ Global
 		{7965CF73-3394-48F0-BC3C-F311B7B33845}.Release|x64.Build.0 = Release|x64
 		{7965CF73-3394-48F0-BC3C-F311B7B33845}.Release|x86.ActiveCfg = Release|Win32
 		{7965CF73-3394-48F0-BC3C-F311B7B33845}.Release|x86.Build.0 = Release|Win32
+		{5A12B684-6608-45C2-B90B-34762980EEBF}.Debug|x64.ActiveCfg = Debug|x64
+		{5A12B684-6608-45C2-B90B-34762980EEBF}.Debug|x64.Build.0 = Debug|x64
+		{5A12B684-6608-45C2-B90B-34762980EEBF}.Debug|x86.ActiveCfg = Debug|Win32
+		{5A12B684-6608-45C2-B90B-34762980EEBF}.Debug|x86.Build.0 = Debug|Win32
+		{5A12B684-6608-45C2-B90B-34762980EEBF}.Release|x64.ActiveCfg = Release|x64
+		{5A12B684-6608-45C2-B90B-34762980EEBF}.Release|x64.Build.0 = Release|x64
+		{5A12B684-6608-45C2-B90B-34762980EEBF}.Release|x86.ActiveCfg = Release|Win32
+		{5A12B684-6608-45C2-B90B-34762980EEBF}.Release|x86.Build.0 = Release|Win32
+		{9BF05B3E-7D14-45FE-BB16-D40B35944D38}.Debug|x64.ActiveCfg = Debug|x64
+		{9BF05B3E-7D14-45FE-BB16-D40B35944D38}.Debug|x64.Build.0 = Debug|x64
+		{9BF05B3E-7D14-45FE-BB16-D40B35944D38}.Debug|x86.ActiveCfg = Debug|Win32
+		{9BF05B3E-7D14-45FE-BB16-D40B35944D38}.Debug|x86.Build.0 = Debug|Win32
+		{9BF05B3E-7D14-45FE-BB16-D40B35944D38}.Release|x64.ActiveCfg = Release|x64
+		{9BF05B3E-7D14-45FE-BB16-D40B35944D38}.Release|x64.Build.0 = Release|x64
+		{9BF05B3E-7D14-45FE-BB16-D40B35944D38}.Release|x86.ActiveCfg = Release|Win32
+		{9BF05B3E-7D14-45FE-BB16-D40B35944D38}.Release|x86.Build.0 = Release|Win32
+		{A7FB9C82-89ED-4EE3-AF57-42614B01EC0A}.Debug|x64.ActiveCfg = Debug|x64
+		{A7FB9C82-89ED-4EE3-AF57-42614B01EC0A}.Debug|x64.Build.0 = Debug|x64
+		{A7FB9C82-89ED-4EE3-AF57-42614B01EC0A}.Debug|x86.ActiveCfg = Debug|Win32
+		{A7FB9C82-89ED-4EE3-AF57-42614B01EC0A}.Debug|x86.Build.0 = Debug|Win32
+		{A7FB9C82-89ED-4EE3-AF57-42614B01EC0A}.Release|x64.ActiveCfg = Release|x64
+		{A7FB9C82-89ED-4EE3-AF57-42614B01EC0A}.Release|x64.Build.0 = Release|x64
+		{A7FB9C82-89ED-4EE3-AF57-42614B01EC0A}.Release|x86.ActiveCfg = Release|Win32
+		{A7FB9C82-89ED-4EE3-AF57-42614B01EC0A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
